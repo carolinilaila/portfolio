@@ -76,14 +76,17 @@ a:hover {
 
 .site-title {
     font-size: 4em;
+
 }
 
 .portfolio {
     padding: 2em;
+    height: 100vh;
 }
 
 .portfolio h2 {
     color: black;
+    margin-top: 1em;
     margin-bottom: 1.5em;
 }
 
@@ -91,15 +94,39 @@ a:hover {
     text-align: center;
 }
 
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(3,240px);
+        justify-content: center;
+        align-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+
 .portfolio .grid {
     display: grid;
     gap: 2em;
-    grid-template-columns: ;
-    
 }
 
-.img-portfolio,
-.img-portfolio2 {
+
+.img-portfolio {
     height: 180px;
     width: 180px;
+    border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+    .img-portfolio {
+        height: auto;
+        width: 100%;
+    }
 }
