@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/fundo.png);
+    background-size:auto 100vh;
+    font-family:'Ubuntu',sans-serif;
+    height: 100vh;
+    font-size: 10px;
+} 
+
+/* Caso a tela tiver no mínimo 400px */
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu ul {
+   display: flex; 
+   justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+
+a {
+    color: #e66c00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title {
+    color:whitesmoke;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 4em;
+}
+
+.img-portfolio2 {
+    height: 230px;
+    width: 230px;
+}
