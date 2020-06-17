@@ -25,6 +25,12 @@ body {
     }
 }
 
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
+
 header {
     height: 100vh;
     display: flex;
