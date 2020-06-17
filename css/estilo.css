@@ -15,13 +15,13 @@ body {
 /* Caso a tela tiver no mínimo 400px */
 @media (min-width: 400px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 @media (min-width: 600px) {
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
