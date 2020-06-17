@@ -6,7 +6,7 @@
 
 body {
     background-image: url(../img/fundo.png);
-    background-size:auto 100vh;
+    background-size:auto 200vh;
     font-family:'Ubuntu',sans-serif;
     height: 100vh;
     font-size: 12px;
@@ -78,7 +78,27 @@ a:hover {
     font-size: 4em;
 }
 
+.portfolio {
+    padding: 2em;
+}
+
+.portfolio h2 {
+    color: black;
+    margin-bottom: 1.5em;
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: ;
+    
+}
+
 .img-portfolio2 {
-    height: 230px;
+    height: 210px;
     width: 230px;
 }
