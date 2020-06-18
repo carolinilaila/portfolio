@@ -6,7 +6,7 @@
 
 body {
     background-image: url(../img/fundo.png);
-    background-size:auto 200vh;
+    background-size:auto 300vh;
     font-family:'Ubuntu',sans-serif;
     height: 100vh;
     font-size: 12px;
@@ -54,7 +54,7 @@ header {
     list-style: none;
 }
 
-.menu a{
+.menu a {
     display: block;
     padding: 10px 20px;
 }
@@ -79,11 +79,13 @@ a:hover {
 
 }
 
+.contato,
 .portfolio {
     padding: 2em;
     height: 100vh;
 }
 
+.contato h2,
 .portfolio h2 {
     color: black;
     margin-top: 1em;
@@ -104,24 +106,11 @@ a:hover {
 
 @media (min-width: 880px) {
     .portfolio .grid {
-        grid-template-columns: repeat(3,240px);
+        grid-template-columns: repeat(2,240px);
         justify-content: center;
         align-content: center;
         height: calc(100vh - 8em - 48px);
     }
-}
-
-
-.portfolio .grid {
-    display: grid;
-    gap: 2em;
-}
-
-
-.img-portfolio {
-    height: 180px;
-    width: 180px;
-    border-radius: 50%;
 }
 
 @media (min-width: 1200px) {
@@ -129,4 +118,29 @@ a:hover {
         height: auto;
         width: 100%;
     }
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato a {
+    color: black;
+    font-size: 4em;
+}
+
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,1); 
 }
