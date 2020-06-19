@@ -68,6 +68,20 @@ a:hover {
     text-decoration: underline;
 }
 
+.titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: .4;
+
+    animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
 .site-subtitle,
 .site-title {
     color:whitesmoke;
@@ -76,7 +90,6 @@ a:hover {
 
 .site-title {
     font-size: 4em;
-
 }
 
 .contato,
@@ -129,6 +142,11 @@ a:hover {
     height: 180px;
     width: 180px;
     border-radius: 50%;
+    transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+    transform: scale(1.2);
 }
 
 .contato .icons {
