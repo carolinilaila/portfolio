@@ -119,15 +119,20 @@ a:hover {
 
 .sobre p {
     color: black;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     text-indent: 1em;
     text-align: center;
 }
 
-.sobre p a {
+.sobre a {
     color: black;
-    font-style: italic; 
+    font-style: italic;
     text-decoration: underline;
+}
+
+.sobre a:hover{
+    background-color:coral;
+    text-decoration: none;
 }
 
 .portfolio figure {
