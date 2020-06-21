@@ -6,7 +6,7 @@
 
 body {
     background-image: url(../img/fundo.png);
-    background-size:auto 300vh;
+    background-size:auto 500vh;
     font-family:'Ubuntu',sans-serif;
     height: 100vh;
     font-size: 12px;
@@ -93,16 +93,41 @@ a:hover {
 }
 
 .contato,
+.sobre,
 .portfolio {
     padding: 2em;
     height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+@media (min-width: 1200px) {
+    .sobre,
+    .contato,
+    .portfolio {
+        max-width: 1200px;
+    }
+}
+
+.sobre h2,
 .contato h2,
 .portfolio h2 {
     color: black;
     margin-top: 1em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+.sobre p {
+    color: black;
+    margin-bottom: 1em;
+    text-indent: 1em;
+    text-align: center;
+}
+
+.sobre p a {
+    color: black;
+    font-style: italic; 
+    text-decoration: underline;
 }
 
 .portfolio figure {
@@ -150,7 +175,10 @@ a:hover {
 }
 
 .contato .icons {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+    padding: 80px;
 }
 
 .contato a {
@@ -161,4 +189,12 @@ a:hover {
 .contato a:hover {
     text-decoration: none;
     text-shadow: 0px 0px 10px rgba(255,255,255,1); 
+}
+
+.footer {
+    margin-bottom: .8em;
+    font-family: 'Ubuntu', monospace;
+    font-weight: 300;
+    font-size: 0.7em;
+    text-align: center;
 }
