@@ -13,7 +13,7 @@ body {
 } 
 
 /* Caso a tela tiver no mínimo 400px */
-@media (min-width: 400px) {
+@media (min-width: 300px) {
     body {
         font-size: 18px;
     }
@@ -45,9 +45,11 @@ header {
     top: 0;
 }
 
+
 .menu ul {
    display: flex; 
    justify-content: space-around;
+   align-items: center;
 }
 
 .menu li {
@@ -56,9 +58,78 @@ header {
 
 .menu a {
     display: block;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
+.switch__container {
+    margin: auto;
+    width: auto;
+  }
+  
+.switch {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch--flat + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 30px;
+    transition: background 0.4s;
+}
+
+.switch--flat + label:before,
+.switch--flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+.switch--flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    transition: margin 0.4s, background 0.4s;
+}
+
+.switch--flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 24px;
+    background-color: #fffdfd;
+    border-radius: 30px;
+    transition: margin 0.4s, background 0.4s;
+}
+
+.switch--flat:checked + label {
+    background-color: rgb(0, 0, 0);
+}
+
+.switch--flat:checked + label::before {
+    background-color: #ffffff;
+}
+
+.switch--flat:checked + label:after {
+    margin-left: 27px;
+    background-color: #000000;
+}
+
+.switch__container a,
 a {
     color: #e66c00;
     text-decoration: none;
@@ -104,7 +175,8 @@ a:hover {
 @media (min-width: 1200px) {
     .sobre,
     .contato,
-    .portfolio {
+    .portfolio,
+    .switch--flat {
         max-width: 1200px;
     }
 }
@@ -119,7 +191,7 @@ a:hover {
 
 .sobre p {
     color: black;
-    margin-bottom: 3em;
+    margin-bottom: 1.2em;
     text-indent: 1em;
     text-align: center;
 }
