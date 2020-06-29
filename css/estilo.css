@@ -4,8 +4,15 @@
     padding: 0;
 }
 
+html {
+    --bg: #F08080;
+    --bg-panel:  #DC143C;
+    --text-color: whitesmoke;
+    --text: black;
+}
+
 body {
-    background-image: url(../img/fundo.png);
+    background-color: var(--bg);
     background-size:auto 500vh;
     font-family:'Ubuntu',sans-serif;
     height: 100vh;
@@ -131,7 +138,7 @@ header {
 
 .switch__container a,
 a {
-    color: #e66c00;
+    color: var(--bg-panel);
     text-decoration: none;
 }
 
@@ -155,7 +162,7 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-    color:whitesmoke;
+    color:var(--text-color);
     text-align: center;
 }
 
@@ -184,20 +191,20 @@ a:hover {
 .sobre h2,
 .contato h2,
 .portfolio h2 {
-    color: black;
+    color: var(--text);
     margin-top: 1em;
     margin-bottom: 1.2em;
 }
 
 .sobre p {
-    color: black;
+    color: var(--text);
     margin-bottom: 1.2em;
     text-indent: 1em;
     text-align: center;
 }
 
 .sobre a {
-    color: black;
+    color: var(--text);
     font-style: italic;
     text-decoration: underline;
 }
@@ -294,13 +301,13 @@ a:hover {
 }
 
 .contato a {
-    color: black;
+    color: var(--text);
     font-size: 4em;
 }
 
 .contato a:hover {
     text-decoration: none;
-    text-shadow: 0px 0px 10px rgba(255,255,255,1); 
+    text-shadow: 0px 0px 18px rgba(255,255,255,1); 
 }
 
 .footer {
