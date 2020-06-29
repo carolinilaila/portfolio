@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7f000adb45.js" crossorigin="anonymous"></script>
-    <script src="js/night-mode"></script>
 </head>
 <body id="inicio">
     <header>
@@ -18,7 +17,7 @@
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li> 
                 <li><a class="switch__container">
-                    <input id="switch-flat" class="switch switch--flat" type="checkbox" aria-label="night-mode">
+                    <input id="switch-flat" class="switch switch--flat" type="checkbox" name="theme">
                     <label for="switch-flat"></label>
                 </li></a>
             </ul>
@@ -75,6 +74,7 @@
             </a>
         </div>
     </section>
+    <script src="js/night-mode.js"></script>
     <footer class="footer container">
         <p> 👸 Desenvolvido por Carolini Pimenta</p>
     </footer>
