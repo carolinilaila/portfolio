@@ -9,6 +9,7 @@ html {
     --bg-panel:  #DC143C;
     --text-color: whitesmoke;
     --text: black;
+    --text-invi:#F08080;
 }
 
 body {
@@ -168,6 +169,13 @@ a:hover {
 
 .site-title {
     font-size: 4em;
+}
+
+.invisible-title {
+    color:var(--text-invi);
+    text-align: center;    
+    margin-top: 1em;
+    margin-bottom: 1.2em;
 }
 
 .contato,
