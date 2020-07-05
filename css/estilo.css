@@ -10,6 +10,8 @@ html {
     --text-color: whitesmoke;
     --text: black;
     --text-invi:#F08080;
+    --color-icons: black;
+    --text-sobre: black;
 }
 
 body {
@@ -205,7 +207,7 @@ a:hover {
 }
 
 .sobre p {
-    color: var(--text);
+    color: var(--text-sobre);
     margin-bottom: 1.2em;
     text-indent: 1em;
     text-align: center;
@@ -223,6 +225,7 @@ a:hover {
 }
 
 .portfolio figure {
+    color: var(--text-sobre);
     text-align: center;
 }
 
@@ -309,7 +312,7 @@ a:hover {
 }
 
 .contato a {
-    color: var(--text);
+    color: var(--color-icons);
     font-size: 4em;
 }
 
