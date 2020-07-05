@@ -10,15 +10,19 @@ const getStyle = (element, style) =>
 const initialColors = {
     bg: getStyle(html, "--bg"),
     bgPanel: getStyle(html, "--bg-panel"),
-    colorHeadings: getStyle(html, "--text"),
-    colorText: getStyle(html, "--text-color"),
+    text: getStyle(html, "--text"),
+    textcolor: getStyle(html, "--text-color"),
+    colorIcons: getStyle(html, "--color-icons"),
+    textSobre: getStyle(html, "--text-sobre"),
 }
 
 const darkMode = {
     bg: "#333333",
     bgPanel: "#434343",
-    colorHeadings: "#3664FF",
-    colorText: "#B5B5B5"
+    text: "#ffffff",
+    textcolor: "#F08080",
+    colorIcons: "#33333",
+    textSobre: "#F08080"
 }
 
 const transformKey = key => 
